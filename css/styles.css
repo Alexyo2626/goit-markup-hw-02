@@ -1,18 +1,48 @@
 /* 
 цвет основного текста: #757575 
-цвет заголовков: #212121 
+цвет заголовков, неактивных nav: #212121 
 цвет белый h1, надписи кнопок: #FFFFFF
 цвет кнопки, ссылки: #2196F3
 цвет телефон, почта в футере rgba(255, 255, 255, 0.6);
 
 */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+}
 
 /* Styles for header */
 
 .main-logo {
-    color: #2196F3;
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .main-logo span {
     color: #000000;
+}
+
+.site-nav {
+    color: var(--title-text-color);
+}
+
+
+.list {
+    list-style: none;
+}
+
+.header .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.header .link:hover,
+.header .link:active {
+color: var(--accent-color);
 }
