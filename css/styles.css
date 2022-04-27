@@ -19,12 +19,12 @@ body {
 
 /* Styles for header */
 
-.main-logo {
+.logo {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.main-logo span {
+.logo span {
     color: #000000;
 }
 
@@ -37,12 +37,55 @@ body {
     list-style: none;
 }
 
-.header .link {
+.link {
     color: var(--primary-text-color);
     text-decoration: none;
 }
 
 .header .link:hover,
-.header .link:active {
+.header .link:active{
 color: var(--accent-color);
+}
+
+/* Styles for hero */
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 44px;
+}
+
+.hero-btn {
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+
+/* Styles for peculiarities and what doing */
+
+.title {
+color: var(--title-text-color);
+}
+
+/* Styles for our team */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+
+/* Styles for footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer span,
+.text {
+    color: #ffffff;
+}
+
+.footer .link {
+    color: rgba(255, 255, 255, 0.6);
 }
