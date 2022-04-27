@@ -82,6 +82,8 @@ color: var(--accent-color);
 
     font-weight: 700;
     font-size: 16px;
+
+    cursor: pointer;
 }
 
 /* Styles for peculiarities */
@@ -96,7 +98,6 @@ color: var(--accent-color);
     line-height: 1.14;
 }
 .peculiarities p {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -129,7 +130,6 @@ color: var(--accent-color);
 }
 
 .team p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
 }
@@ -147,7 +147,6 @@ color: var(--accent-color);
     color: #ffffff;
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -156,7 +155,11 @@ color: var(--accent-color);
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+}
+
+.footer .link:hover,
+.footer .link:active {
+    color: var(--accent-color);
 }
