@@ -15,6 +15,9 @@
 body {
     color: var(--primary-text-color);
     background-color: #ffffff;
+
+    font-family: 'Roboto',
+    sans-serif;
 }
 
 /* Styles for header */
@@ -22,13 +25,19 @@ body {
 .logo {
     color: var(--accent-color);
     text-decoration: none;
+
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19px;
 }
 
 .logo span {
     color: #000000;
 }
 
-.site-nav {
+.site-nav .link {
     color: var(--title-text-color);
 }
 
@@ -47,6 +56,12 @@ body {
 color: var(--accent-color);
 }
 
+.site-nav, .auth-nav {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+}
+
 /* Styles for hero */
 .hero {
     background-color: #2F303A;
@@ -54,20 +69,46 @@ color: var(--accent-color);
 
 .hero-title {
     color: #ffffff;
+
     text-transform: uppercase;
+    font-weight: 900;
     font-size: 44px;
+    line-height: 1.36;
 }
 
 .hero-btn {
     color: #ffffff;
     background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
 }
 
-/* Styles for peculiarities and what doing */
-
-.title {
-color: var(--title-text-color);
+/* Styles for peculiarities */
+.title, .subtitle {
+    color: var(--title-text-color);
 }
+
+.peculiarities .title {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.peculiarities p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Styles for what doing */
+.what-doing .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+
 
 /* Styles for our team */
 
@@ -75,17 +116,47 @@ color: var(--title-text-color);
     background-color: #F5F4FA;
 }
 
+.team .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+}
+
+.team .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.team p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
 
 /* Styles for footer */
 .footer {
     background-color: #2F303A;
 }
 
-.footer span,
-.text {
+.footer span {
     color: #ffffff;
+}
+
+.footer .text {
+    color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .footer .link {
     color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
 }
