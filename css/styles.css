@@ -1,20 +1,46 @@
 /* 
-цвет основного текста: #757575 
-цвет заголовков, неактивных nav: #212121 
-цвет белый h1, надписи кнопок: #FFFFFF
+заголовки h2, h3, ссылки в nav: #212121;
+цвет абзацев, контактов в шапке: #757575;
+цвет телефон/почта в футере rgba(255, 255, 255, 0.6);
+
+основной цвет фона #FFFFFF;
+фон футера+героя #2F303A;
+
+цвет h1, кнопок в hover: #FFFFFF
 цвет кнопки, ссылки: #2196F3
-цвет телефон, почта в футере rgba(255, 255, 255, 0.6);
 
 */
+/* CSS variables */
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+
+    --bg-color: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    
+    --text-btn-color-hover: #FFFFFF;
     --accent-color: #2196F3;
 }
 
+/* Hidden  */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 body {
-    color: var(--primary-text-color);
-    background-color: #ffffff;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
 
     font-family: 'Roboto',
     sans-serif;
