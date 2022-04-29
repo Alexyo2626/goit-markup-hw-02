@@ -81,10 +81,15 @@ body {
 }
 
 .header .item {
+    color: currentColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.item.current {
+    color: var(--accent-color);
 }
 
 .header .link:hover,
@@ -119,6 +124,7 @@ body {
     color: var(--hero-btn-color);
     background-color: var(--accent-color);
 
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -209,4 +215,43 @@ body {
 .address .link:hover,
 .address .link:active {
     color: var(--accent-color);
+}
+
+/* =======================
+        Portfolio.html
+======================= */
+.portfolio .btn {
+    color: currentColor;
+    font-family: inherit;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.portfolio .btn:hover,
+.portfolio .btn:active,
+.btn.current {
+    color: var(--text-btn-color-hover);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.portfolio .subtitle {
+    color: var(--main-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+    color: var(--second-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
