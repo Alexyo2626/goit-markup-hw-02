@@ -1,5 +1,5 @@
-/* 
-заголовки h2, h3, ссылки в nav: #212121;
+
+/* заголовки h2, h3, ссылки в nav: #212121;
 цвет абзацев, контактов в шапке: #757575;
 цвет телефон/почта в футере rgba(255, 255, 255, 0.6);
 
@@ -7,9 +7,9 @@
 фон футера+героя #2F303A;
 
 цвет h1, кнопок в hover: #FFFFFF
-цвет кнопки, ссылки: #2196F3
+цвет кнопки, ссылки: #2196F3 */
 
-*/
+
 /* CSS variables */
 :root {
     --main-text-color: #212121;
@@ -17,11 +17,14 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
 
     --bg-color: #FFFFFF;
+    --hero-bg-color: #2F303A;
     --footer-bg-color: #2F303A;
     
+    --hero-btn-color: #FFFFFF;
     --text-btn-color-hover: #FFFFFF;
     --accent-color: #2196F3;
 }
+
 
 /* Hidden  */
 
@@ -46,95 +49,110 @@ body {
     sans-serif;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
 /* Styles for header */
 
 .logo {
     color: var(--accent-color);
-    text-decoration: none;
 
     font-family: 'Raleway',
     sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19px;
+    letter-spacing: 0.03em;
+
 }
 
-.logo span {
+.logo-black {
     color: #000000;
 }
 
-.site-nav .link {
-    color: var(--title-text-color);
+.logo-white {
+    color: #FFFFFF;
 }
 
-
-.list {
-    list-style: none;
-}
-
-.link {
-    color: var(--primary-text-color);
-    text-decoration: none;
+.header .item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .header .link:hover,
-.header .link:active{
-color: var(--accent-color);
+.header .link:active {
+    color: var(--accent-color);
 }
 
-.site-nav, .auth-nav {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+.contacts .item {
+    color: var(--second-text-color);
+
 }
+
 
 /* Styles for hero */
+
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-bg-color)
 }
 
-.hero-title {
+.hero .title {
     color: #ffffff;
 
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
-.hero-btn {
-    color: #ffffff;
+.hero .btn {
+    color: var(--hero-btn-color);
     background-color: var(--accent-color);
 
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.88;
 
     cursor: pointer;
-}
+}    
+
 
 /* Styles for peculiarities */
-.title, .subtitle {
-    color: var(--title-text-color);
-}
 
 .peculiarities .title {
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
-.peculiarities p {
+.peculiarities .text {
+    color: var(--second-text-color);
+
     font-size: 14px;
     line-height: 1.71;
 }
 
+
 /* Styles for what doing */
+
 .what-doing .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
-
 
 
 /* Styles for our team */
@@ -144,48 +162,51 @@ color: var(--accent-color);
 }
 
 .team .title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team .subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
+    letter-spacing: 0.03em;
 }
 
-.team p {
+.team .text {
+    color: var(--second-text-color);
+
     font-size: 16px;
     line-height: 1.9;
 }
 
+
 /* Styles for footer */
-.footer {
-    background-color: #2F303A;
+
+.bottom {
+    background-color: var(--footer-bg-color)
 }
 
-.footer span {
-    color: #ffffff;
-}
-
-.footer .text {
-    color: #ffffff;
+.bottom .text {
+    color: #FFFFFF;
 
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
 }
 
-.footer .link {
-    color: rgba(255, 255, 255, 0.6);
+.address .link {
+    color: var(--footer-text-color);
 
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
 }
 
-.footer .link:hover,
-.footer .link:active {
+.address .link:hover,
+.address .link:active {
     color: var(--accent-color);
 }
