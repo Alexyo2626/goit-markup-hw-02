@@ -67,7 +67,6 @@ body {
     sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19px;
     letter-spacing: 0.03em;
 
 }
@@ -93,13 +92,12 @@ body {
 }
 
 .header .link:hover,
-.header .link:active {
+.header .link:focus {
     color: var(--accent-color);
 }
 
 .contacts .item {
     color: var(--second-text-color);
-
 }
 
 
@@ -179,6 +177,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
+    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -186,6 +185,7 @@ body {
     color: var(--second-text-color);
 
     font-size: 16px;
+    text-align: center;
     line-height: 1.9;
 }
 
@@ -199,9 +199,14 @@ body {
 .bottom .text {
     color: #FFFFFF;
 
-    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address .text {
+    font-style: normal;
 }
 
 .address .link {
@@ -213,7 +218,7 @@ body {
 }
 
 .address .link:hover,
-.address .link:active {
+.address .link:focus {
     color: var(--accent-color);
 }
 
@@ -231,7 +236,7 @@ body {
 }
 
 .portfolio .btn:hover,
-.portfolio .btn:active,
+.portfolio .btn:focus,
 .btn.current {
     color: var(--text-btn-color-hover);
     background-color: var(--accent-color);
