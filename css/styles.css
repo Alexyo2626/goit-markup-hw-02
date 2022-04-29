@@ -29,6 +29,7 @@
     margin: -1px;
 }
 
+/* Global styles */
 body {
     color: var(--main-text-color);
     background-color: var(--bg-color);
